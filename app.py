@@ -10,9 +10,8 @@ app=Flask(__name__)
 
 #to tell flask what url shoud trigger the function index()
 @app.route('/')
-@app.route('/index')
 def index():
-    return flask.render_template('index.html')
+    return render_template('index.html')
 
 #prediction function
 def PricePredictor(to_predict_list):
@@ -24,12 +23,13 @@ def PricePredictor(to_predict_list):
 @app.route('/result',methods = ['POST'])   
 def result():
     if request.method == 'POST':
+        print(request.form)
         to_predict_list = request.form.to_dict()
         to_predict_list=list(to_predict_list.values())
         to_predict_list = list(map(int, to_predict_list))
         prediction = PricePredictor(to_predict_list)
-        print(prediction)
-        return render_template("result.html", prediction=prediction)
+        print(to_predict_list)
+        return flask.render_template("result.html", prediction=to_predict_list)
 
 if __name__ == "__main__":
     print("Starting Python Flask Server For Home Price Prediction...")

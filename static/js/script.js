@@ -70,7 +70,9 @@ function runEnter() {
   to_predict_list.push(inputValue8)
 
   // Print the value to the console
+
   console.log(to_predict_list);
+  //alert(to_predict_list);
   return to_predict_list;
 
 }
