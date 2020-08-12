@@ -2,10 +2,11 @@
 <html>
 <head>
     <title>House Price Prediction</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <!-- <script src="script.js"></script>
-	<link rel="stylesheet" href="styles.css"> -->
+    
+	<!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
 
 <body>
@@ -13,37 +14,37 @@
 <div class="img"></div>
 <h1 class="title">House Price Predictor</h1>
 
-<form class="form">
+<form class="form" id="form" action="/result" method="POST">
 
-    <h2 class="overall-quality">Overall Quality (Please enter a number from 1-10)</h2>
-    <input class="overall-quality"  type="number" id="uiSqft" class="floatLabel" name="overall-quality" value="10">
+    <h2>Overall Quality (Please enter a number from 1-10)</h2>
+    <input class="overall-quality"  type="number" id="overall-quality" class="floatLabel" name="overall-quality1" value="10">
 
-	<h2 class="ground-area">Ground Living Area (sq. ft)</h2>
-    <input class="area"  type="number" id="uiSqft" class="floatLabel" name="square-feet" value="1000">
+	<h2>Ground Living Area (sq. ft)</h2>
+    <input class="area"  type="number" id="ground-area" class="floatLabel" name="square-feet1" value="1000">
     
-    <h2 class="second-floor-area">Second Floor Area (sq. ft)</h2>
-    <input class="area"  type="number" id="uiSqft" class="floatLabel" name="square-feet" value="1000">
+    <h2>Second Floor Area (sq. ft)</h2>
+    <input class="area"  type="number" id="second-floor-area" class="floatLabel" name="square-feet2" value="1000">
 
-    <h2 class="basement-area">Basement Area (sq. ft)</h2>
-    <input class="area"  type="number" id="uiSqft" class="floatLabel" name="square-feet" value="1000">
+    <h2>Basement Area (sq. ft)</h2>
+    <input class="area"  type="number" id="basement-area" class="floatLabel" name="square-feet3" value="1000">
 
-    <h2 class="first-floor-area">First Floor Area (sq. ft)</h2>
-    <input class="area"  type="number" id="uiSqft" class="floatLabel" name="square-feet" value="1000">
+    <h2>First Floor Area (sq. ft)</h2>
+    <input class="area"  type="number" id="first-floor-area" class="floatLabel" name="square-feet4" value="1000">
 
-    <h2 class="lot-area">Lot Area (sq. ft)</h2>
-    <input class="area"  type="number" id="uiSqft" class="floatLabel" name="square-feet" value="1000">
+    <h2>Lot Area (sq. ft)</h2>
+    <input class="area"  type="number" id="lot-area" class="floatLabel" name="square-feet5" value="1000">
 
-    <h2 class="year-built">Year Built (Please enter a year between 1873 and 2019)</h2>
-    <input class="year-built"  type="number" id="uiSqft" class="floatLabel" name="year-built" value="2019">
+    <h2>Year Built (Please enter a year between 1873 and 2019)</h2>
+    <input class="year-built"  type="number" id="year-built" class="floatLabel" name="year-built1" value="2019">
 
-    <h2 class="garage-cars">Garage Cars (Please enter the number of cars the garage can hold)</h2>
-    <input class="garage-cars"  type="number" id="uiSqft" class="floatLabel" name="garage-cars" value="2">
+    <h2>Garage Cars (Please enter the number of cars the garage can hold)</h2>
+    <input class="garage-cars"  type="number" id="garage-cars" class="floatLabel" name="garage-cars1" value="2">
 
 </form>
 
 <br><br><br>
 
-<button class="submit"  type="button">Submit</button>
-
+<button class="submit" id="submit" type="button">Submit</button>
+    <script src="../static/js/script.js"></script>
 </body>
 </html>
