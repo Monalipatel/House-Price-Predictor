@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Prediction</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    
+	<!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+
+<body>
+
+<div class="img"></div>
+<h1 class="title">House Price Predictor</h1>
+
+<form class="form" id="form" action="/result" method="POST">
+
+    <h2>Overall Quality (Please enter a number from 1-10)</h2>
+    <input class="overall-quality"  type="number" id="overall-quality" class="floatLabel" name="overall-quality" placeholder="10">
+
+	<h2>Ground Living Area (sq. ft)</h2>
+    <input class="area"  type="number" id="ground-area" class="floatLabel" name="ground-area" placeholder="1000">
+    
+    <h2>Second Floor Area (sq. ft)</h2>
+    <input class="area"  type="number" id="second-floor-area" class="floatLabel" name="second-floor-area" placeholder="1000">
+
+    <h2>Basement Area (sq. ft)</h2>
+    <input class="area"  type="number" id="basement-area" class="floatLabel" name="basement-area" placeholder="1000">
+
+    <h2>First Floor Area (sq. ft)</h2>
+    <input class="area"  type="number" id="first-floor-area" class="floatLabel" name="first-floor-area" placeholder="1000">
+
+    <h2>Lot Area (sq. ft)</h2>
+    <input class="area"  type="number" id="lot-area" class="floatLabel" name="lot-area" placeholder="1000">
+
+    <h2>Year Built (Please enter a year between 1873 and 2019)</h2>
+    <input class="year-built"  type="number" id="year-built" class="floatLabel" name="year-built" placeholder="2019">
+
+    <h2>Garage Cars (Please enter the number of cars the garage can hold)</h2>
+    <input class="garage-cars"  type="number" id="garage-cars" class="floatLabel" name="garage-cars" placeholder="2">
+    <br><br><br>
+
+    <button class="submit" id="submit" type="submit">Submit</button>
+</form>
+    <!-- <script src="{{url_for('static',filename='/js/script.js')}}"></script> -->
+</body>
+</html>
