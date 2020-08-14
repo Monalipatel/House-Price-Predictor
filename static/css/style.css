@@ -39,7 +39,7 @@ select option {
   background-color: #d85002;
   color: white;
 }
-.form {
+.form, #link {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -51,8 +51,10 @@ select option {
   z-index: 2;
 }
 
-h2 {
+h2, #link {
   font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 8px;
   color: white;
 }
