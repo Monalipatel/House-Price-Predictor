@@ -113,7 +113,7 @@ h2 {
   margin-bottom: 8px;
   color: white;
 }
-.area {
+.area ,.overall-quality, .year-built, .garage-cars{
   font-family: "Raleway", sans-serif;
   outline: 0;
   width: 76%;
