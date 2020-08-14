@@ -17,7 +17,20 @@
 <form class="form" id="form" action="/result" method="POST">
 
     <h2>Overall Quality (Please enter a number from 1-10)</h2>
-    <input class="overall-quality"  type="number" id="overall-quality" class="floatLabel" name="overall-quality" placeholder="10">
+    <!-- <input class="overall-quality"  type="number" id="overall-quality" class="floatLabel" name="overall-quality" placeholder="10"> -->
+    <!-- <label for="occup">Occupation</label> -->
+    <select id="overall-quality" name="overall-quality" class="overall-quality" placeholder="10">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
 
 	<h2>Ground Living Area (sq. ft)</h2>
     <input class="area"  type="number" id="ground-area" class="floatLabel" name="ground-area" placeholder="1000">
