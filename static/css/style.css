@@ -1,0 +1,104 @@
+body,
+html {
+  height: 100%;
+}
+
+.img {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 110, 0.5),
+      rgb(1, 0, 87)
+    ),
+    url("https://ap.rdcpix.com/15f9b18cf1a1b9aef125b9755fcdb0dfl-m2334925334xd-w1020_h770_q80.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: 100% 100%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.title {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.title:hover {
+  transition: 0.5s;
+  color: #d85002;
+}
+
+input[type="number"], select,
+select option {
+  background-color: #d85002;
+  color: white;
+}
+.form, #link {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  line-height: 1.625;
+  margin: 8px auto;
+  padding-left: 16px;
+  z-index: 2;
+}
+
+h2, #link {
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+  color: white;
+}
+.area ,.overall-quality, .year-built, .garage-cars{
+  font-family: "Raleway", sans-serif;
+  outline: 0;
+  width: 76%;
+  border: 0;
+  margin: 0 0 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.submit {
+  margin-top: 20px;
+  width: 76%;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Raleway", sans-serif, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #d85002;
+  transition: ease-out 0.4s;
+}
+
+.submit:hover {
+  box-shadow: inset 400px 0 0 0 #d85002;
+}
+
+.result {
+  background: #d85002;
+  color: white;
+  width: 76%;
+  border: 0;
+  margin: 25px 0 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  height: 35px;
+  text-align: center;
+}
