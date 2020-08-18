@@ -9,21 +9,28 @@
 <body>
 <div class="img"></div>
 
-<form class="form" id="form" >
+<form class="form" id="form">
 
     <h1 class="title">House Price Predictor</h1>
     <br>
     <h2>Based on our model, your house will sell for approximately:</h2>
     
-    <h1 class="title">${{ prediction }} </h1>
+    <h1 class="title">{{ prediction }} </h1>
    
     <h2>Our model is approximately 85% accurate. Please feel free to predict another house price or check out our project on Github.</h2>
     
     <br>
-    <button class="submit" href="{{ url_for('index') }}">Predict another house price</button> 
+    <!-- <button class="return" href="/">Predict another house price</button>  -->
+    <!-- <a href="/" class="return">Predict another house price</a> -->
+    
+    <form action="/">
+        <button type="submit" class="submit">Predict another house price</button>
+    </form>
 
     <br><br>
+   
     <a id="link" href="https://github.com/Monalipatel/Final-Project">Visit our project on GitHub</a>
+
 </form> 
 
 </body>
