@@ -2,12 +2,37 @@
 <html>
     <head>
     <title>House Price Prediction</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head> 
 
 <body>
-    <h1> {{ prediction }}</h1>
+<div class="img"></div>
+
+<form class="form" id="form">
+
+    <h1 class="title">House Price Predictor</h1>
+    <br>
+    <h2>Based on our model, your house will sell for approximately:</h2>
+    
+    <h1 class="title">{{ prediction }} </h1>
+   
+    <h2>Our model is approximately 85% accurate. Please feel free to predict another house price or check out our project on Github.</h2>
+    
+    <br>
+    <!-- <button class="return" href="/">Predict another house price</button>  -->
+    <!-- <a href="/" class="return">Predict another house price</a> -->
+    
+    <form action="/">
+        <button type="submit" class="submit">Predict another house price</button>
+    </form>
+
+    <br><br>
+   
+    <a id="link" href="https://github.com/Monalipatel/Final-Project">Visit our project on GitHub</a>
+
+</form> 
+
 </body>
 
 </html>

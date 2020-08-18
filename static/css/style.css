@@ -39,7 +39,8 @@ select option {
   background-color: #d85002;
   color: white;
 }
-.form, #link {
+
+.form {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -58,6 +59,7 @@ h2, #link {
   margin-bottom: 8px;
   color: white;
 }
+
 .area ,.overall-quality, .year-built, .garage-cars{
   font-family: "Raleway", sans-serif;
   outline: 0;

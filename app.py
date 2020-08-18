@@ -22,7 +22,10 @@ def PricePredictor(to_predict_list):
     X_scaled = X_scaler.transform(to_predict)
     result = loaded_model.predict(X_scaled)
     result_unscaled = y_scaler.inverse_transform(result)
-    return result_unscaled[0]
+    final_prediction =  round(result_unscaled[0])
+    final_prediction = "${:,.0f}".format(final_prediction)
+    
+    return final_prediction
 
 @app.route('/result',methods = ['GET','POST'])   
 def result():
