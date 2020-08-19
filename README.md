@@ -39,6 +39,13 @@ The objective of this project is to understand house price data through visualiz
 
 ### Preprocess Data
 
+* We used a housing price dataset from a Kaggle machine learning competition. * Initially, the data set contained > 80 columns, including: 
+* Overall house quality
+* Number of cars for garage
+* Number of bedrooms and bathrooms
+* House sale price ⇐ our target variable
+
+
 #### Import Raw Data and Perform Basic Data Cleaning
 
 1. Select features to use in modeling and drop the rest.
