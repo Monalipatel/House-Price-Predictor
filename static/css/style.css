@@ -52,12 +52,20 @@ select option {
   z-index: 2;
 }
 
-h2, #link {
+h2 {
   font-size: 18px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 8px;
   color: white;
+}
+
+.title1 {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
 }
 
 .area ,.overall-quality, .year-built, .garage-cars{
