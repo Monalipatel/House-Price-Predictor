@@ -64,7 +64,7 @@ The objective of this project is to understand house price data through visualiz
 
 ## Resources
 
-* [Exoplanet Data Source](https://www.kaggle.com/nasa/kepler-exoplanet-search-results)
+* [Exoplanet Data Source](https://ww2.amstat.org/publications/jse/v19n3/decock/AmesHousing.txt)
 
 ## Contact
 
