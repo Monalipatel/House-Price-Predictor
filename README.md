@@ -68,4 +68,4 @@ The objective of this project is to understand house price data through visualiz
 
 ## Contact
 
-Created by [Monali Patel][Shruti Jadhav][Pierce Henderson]
+Created by Monali Patel, Shruti Jadhav, Pierce Henderson
