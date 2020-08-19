@@ -78,7 +78,8 @@ We created a flask app that predicts house prices based on user input.
 
 ## Contact
 
-Created by 
-Monali Patel 
-Shruti Jadhav 
-Pierce Henderson
+ Created by 
+ 
+ Monali Patel 
+ Shruti Jadhav 
+ Pierce Henderson
