@@ -39,35 +39,38 @@ The objective of this project is to understand house price data through visualiz
 
 ### Preprocess Data
 
-* We used a housing price dataset from a Kaggle machine learning competition. * Initially, the data set contained > 80 columns, including: 
+We used a housing price dataset from a Kaggle machine learning competition. Initially, the data set contained > 80 columns, including: 
 * Overall house quality
 * Number of cars for garage
 * Number of bedrooms and bathrooms
 * House sale price ⇐ our target variable
 
-
 #### Import Raw Data and Perform Basic Data Cleaning
 
-1. Select features to use in modeling and drop the rest.
+* Drop the 5 columns with the most missing values
+* Drop rows with missing values
+* Remove “Id” column 
+* Determine feature importance with a random forest regressor
 
-2. Verify data is of correct type and "makes sense."
+#### Create Machine Learning Models
 
-3. Manage missing data
+* We experimented with other models, including:
+* Linear regression
+* Lasso
+* Ridge
+* Elastic net
+ However, they were less accurate than the random forest regressor.
+ 
+ ### Random Forest Regressor
+ 
+ Random Forest Regressor was the most accurate machine learning model for our data set. We achieved 85% accuracy.
 
-#### Feature Selection
+##### Application
 
-##### Feature Importance
-
-#### Check distribution of Target
-
-#### Scale Data
-
-* Scale data using `StandardScaler`
-
-## Create Machine Learning Models
-
-### Random Forest Classifier
-
+We created a flask app that predicts house prices based on user input.
+* Load random forest regressor model using Joblib
+* User input includes 8 features
+* Predicted house price is 85% accurate
 
 ## Resources
 
@@ -75,4 +78,7 @@ The objective of this project is to understand house price data through visualiz
 
 ## Contact
 
-Created by Monali Patel, Shruti Jadhav, Pierce Henderson
+Created by 
+Monali Patel 
+Shruti Jadhav 
+Pierce Henderson
